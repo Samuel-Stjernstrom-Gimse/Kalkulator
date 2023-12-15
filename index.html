@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="calculator">
+        <div class="top">
+            <img class="logo" id="logo-top" src="img/weary-cat.svg" alt="calc logo">
+        </div>
+        <div class="screen">
+            <h2 id="screen-1">
+
+            </h2>
+        </div>
+        <section class="interface">
+            <div class="column">
+                <button class=" button-Style button-operator" id="btn-+">
+                    +
+                </button>
+                <button class="button button-Style" id="btn-7">
+                    7
+                </button>
+                <button class="button button-Style" id="btn-4">
+                    4
+                </button>
+                <button class="button button-Style" id="btn-1">
+                    1
+                </button>
+                <button class="button button-Style" id="btn-0">
+                    0
+                </button>
+            </div>
+            <div class="column">
+                <button class=" button-Style button-operator" id="btn--">
+                    -
+                </button>
+                <button class="button button-Style" id="btn-8">
+                    8
+                </button>
+                <button class="button button-Style" id="btn-5">
+                    5
+                </button>
+                <button class="button button-Style" id="btn-2">
+                    2
+                </button>
+                <button class="button button-Style" id="btn-">
+
+                </button>
+            </div>
+            <div class="column">
+                <button class="button-Style button-operator" id="btn-*">
+                    *
+                </button>
+                <button class="button button-Style" id="btn-9">
+                    9
+                </button>
+                <button class="button button-Style" id="btn-6">
+                    6
+                </button>
+                <button class="button button-Style" id="btn-3">
+                    3
+                </button>
+                <button class="button-Style" id="btn-Del" onclick="del()">
+                    Del
+                </button>
+            </div>
+            <div class="column">
+                <button class=" button-Style button-operator" id="btn-/">
+                    /
+                </button>
+                <button class=" button-Style button-operator" id="btn-%">
+                    %
+                </button>
+                <button class=" button-Style" id="btn-Back" onclick="back()">
+                    Back
+                </button>
+                <button class="button button-Style" id="btn-.">
+                    .
+                </button>
+                <button class=" button-Style" onclick="sum()" id="btn-=">
+                    =
+                </button>
+            </div>
+            <script src="index.js"></script>
+        </section>
+
+    </main>
+
+</body>
+</html>
