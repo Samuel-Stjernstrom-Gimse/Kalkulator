@@ -5,6 +5,7 @@ let valgtTall  = 0
 let tallOperatorTall = []
 let operator = ""
 let result1 = 0
+let memoryScreen = document.getElementById("memory")
 
 buttonNumInput.forEach(handleClick)
 function handleClick(btn) {
@@ -15,7 +16,13 @@ function handleClick(btn) {
         showScreen.innerText += valgtTall
     }
 }
-const del = () => showScreen.innerText = ""
+
+function del() {
+    memoryScreen.innerText = ""
+    showScreen.innerText = ""
+    tallOperatorTall = []
+}
+
 const back = () => showScreen.innerText = showScreen.innerText.slice(0, showScreen.innerText.length - 1)
 
 
@@ -28,6 +35,7 @@ function handleOperatorClick (oBtn){
     function oClicker (operatorVar){
         operator = operatorVar.target.innerText
         tallOperatorTall.push(showScreen.innerText, operator)
+        memoryScreen.innerText = showScreen.innerText + " " + operator
         operator = ""
         showScreen.innerText = ""
     }
@@ -42,5 +50,9 @@ function sum() {
     result1 = eval(arrayToExp(tallOperatorTall))
     showScreen.innerText = result1
     tallOperatorTall = []
+    memoryScreen.innerText = ""
 }
+
+
+
 

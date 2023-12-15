@@ -5,6 +5,7 @@
     --ldark: #3b383c;
     --dark: #2e011a;
     --back: #1b3832;
+    --border: #027676;
 }
 
 body{
@@ -24,7 +25,7 @@ body{
     background-color: var(--ldark);
     border-radius: 20px;
     box-shadow: 20px 20px 50px var(--dark);
-    border: 35px solid var(--dark);
+    border: 35px solid var(--border);
 
 }
 .top {
@@ -39,22 +40,28 @@ body{
 }
 .screen {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-content: end;
+    margin-top: 0;
+    margin-bottom: 0;
     background-color: var(--mlight);
     width: 25vw;
-    height: 13vh;
+    min-height: 20%;
     text-align: right;
     border-width: 20px;
     border: solid var(--dark);
     color: var(--light);
-    max-width: 23vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
 }
 #screen-1 {
-    padding-bottom: 3vw;
+    padding: 0;
+    margin-bottom: 0;
+    height: 50%;
 }
-
+#memory {
+    padding: 0;
+    margin-top: 0;
+    height: 50%;
+}
 .interface {
     padding-top: 5vh;
     padding-bottom: 5vh;
