@@ -25,7 +25,7 @@ body{
     background-color: var(--ldark);
     border-radius: 20px;
     box-shadow: 20px 20px 50px var(--dark);
-    border: 35px solid var(--border);
+    border: 10px solid var(--light);
 
 }
 .top {
@@ -37,7 +37,9 @@ body{
 
 .logo {
     height: 8vh;
+    filter: invert(78%) sepia(70%) saturate(1447%) hue-rotate(94deg) brightness(95%) contrast(103%);
 }
+
 .screen {
     display: flex;
     flex-direction: column;
@@ -46,21 +48,25 @@ body{
     margin-bottom: 0;
     background-color: var(--mlight);
     width: 25vw;
-    min-height: 20%;
+    min-height: 26%;
     text-align: right;
     border-width: 20px;
     border: solid var(--dark);
     color: var(--light);
 }
+
 #screen-1 {
     padding: 0;
     margin-bottom: 0;
-    height: 50%;
+    min-height: 50%;
+    min-font-size: 50%;
+    font-family: "Fira Code Light";
 }
 #memory {
     padding: 0;
     margin-top: 0;
-    height: 50%;
+    min-height: 50%;
+    font-family: "Fira Code Light";
 }
 .interface {
     padding-top: 5vh;
